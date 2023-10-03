@@ -1,0 +1,135 @@
+/* reset */
+* {
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  margin-left: 20px;
+  background-image: url('https://www.wallpapertip.com/wmimgs/3-33384_pokemon-detective-pikachu-movie-hd-desktop-wallpaper-pokemon.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+  line-height: 1.6;
+}
+.Pagina1 {
+  text-align: center;
+  font-weight: bold;
+}
+.Pagina2 {
+  text-align: center;
+  font-weight: bold;
+}
+.trainer-text {
+  background: linear-gradient(45deg, #ff5733, #33ff57, #5733ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.List_select {
+  border-color: #e09930;
+}
+h1 {
+  font-size: 80px;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+  animation: flash 4s infinite;
+}
+/*efecto para el h1 brillante */
+@keyframes flash {
+  0%,
+  100% {
+    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px #fff, 0 0 30px #fff,
+      0 0 40px rgb(255, 0, 0), 0 0 70px rgb(255, 30, 0),
+      0 0 80px rgb(255, 230, 0), 0 0 100px rgb(251, 255, 0),
+      0 0 150px rgb(255, 217, 0);
+  }
+  50% {
+    text-shadow: none;
+  }
+}
+
+p {
+  width: auto;
+  margin: 0;
+  animation: move 5s ease-in-out infinite;
+  font-size: 2em;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(
+      5px
+    ); /* Cambia la distancia horizontal del movimiento */
+  }
+  80% {
+    transform: translateX(0);
+  }
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input,
+button {
+  outline: none;
+  border: 1px solid #c6b3b3;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 2px;
+  position: center;
+  font-weight: bold;
+}
+
+button {
+  background-color: rgb(245, 242, 69);
+  color: rgb(10, 9, 9);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00bcd4;
+}
+
+a {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #007c91;
+}
+
+@media only screen and (min-device-width: 314px) and (max-device-width: 564px) and (-webkit-min-device-pixel-ratio: 4) {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
